@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
+import Display from '../Display/Display';
 
 const Watch = () => {
 //   stats declare
@@ -9,10 +10,13 @@ const running = () =>{
     setMtr(newMtr)
 }
     return (
-        <div style={{border:'5px solid green',margin:'10px',padding:'10px'}}>
-            <h1>this is her Smart Watch</h1>
-            <h3>running : {mtr}</h3>
-            <button onClick={running}>de dour......</button>
+        <div style={{backgroundColor:'olivedrab',border:'5px solid green',margin:'10px',padding:'10px'}}>
+            <h1>This is her Smart Watch</h1>
+            <h3>Running : <span style={{color:'yellow'}}>{mtr}</span></h3>
+
+            <button onClick={running} style={{borderRadius:'7px',borderStyle:'none',backgroundColor:'blue',color:'white'}}>de dour.....</button>
+            <Display time='11am' mtr={mtr} ></Display>{/*data are to send into display component*/}
+        
         </div>
     );
 };
