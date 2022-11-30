@@ -2,7 +2,7 @@ import React from 'react';
 import DeviceDetails from '../DeviceDetails/DeviceDetails';
 
 const Device = (props) => {
-    return ( // example with undirectional data flow 
+    return ( // example with undirectional data flow "DeviceDetails" a 
         <div>
             <h1>I have : {props.name} </h1>
             <DeviceDetails price = {props.price}></DeviceDetails>
