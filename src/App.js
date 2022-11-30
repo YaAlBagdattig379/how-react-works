@@ -4,7 +4,8 @@ import Watch from './components/Watch/Watch';
 function App() {
   return (
     <div className="App">
-      <Device name='u-phone' price = '9350'></Device>
+      <Device name='u-phone' price = '9350'></Device>{/* data sends into
+                                Device component*/}
       <Watch></Watch>
     </div>
   );
